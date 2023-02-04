@@ -1,0 +1,11 @@
+ls -to list everything in a folder
+
+code . -to open vscode from that folder
+
+mkdir -to create folder
+
+touch -to create a file
+
+mv - used to move or rename files/folders
+eg. mv hello-world ~prep -> this comman moved the folder hello-world to a folder called prep
+eg. mv -T bob fred -> this renamed the file bob to fred
