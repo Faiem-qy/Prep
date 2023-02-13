@@ -9,3 +9,7 @@ touch -to create a file
 mv - used to move or rename files/folders
 eg. mv hello-world ~prep -> this comman moved the folder hello-world to a folder called prep
 eg. mv -T bob fred -> this renamed the file bob to fred
+eg. mv hello-world ..  -> this moves the file one folder backwards
+
+Change the Git Remote Of your repository
+git remote set-url origin "remote name without the inverted commas"
