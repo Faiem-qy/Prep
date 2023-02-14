@@ -45,21 +45,20 @@ while (num >= 1) {
 
 // while (num >= 1) {
 // if(num === 1){
-//     console.log(num + " bottle of juice on the wall! " 
-//               + num + " bottle of juice! Take one down, pass it around... " 
+//     console.log(num + " bottle of juice on the wall! "
+//               + num + " bottle of juice! Take one down, pass it around... "
 //               + (num-1) + " bottles of juice on the wall!");
 // }else if(num === 2){
-//     console.log(num + " bottles of juice on the wall! " 
-//               + num + " bottles of juice! Take one down, pass it around... " 
+//     console.log(num + " bottles of juice on the wall! "
+//               + num + " bottles of juice! Take one down, pass it around... "
 //               + (num-1) + " bottle of juice on the wall!");
-// }else{ 
-//     console.log(num + " bottles of juice on the wall! " 
-//              + num + " bottles of juice! Take one down, pass it around... " 
-//              + (num-1) + " bottles of juice on the wall!");   
+// }else{
+//     console.log(num + " bottles of juice on the wall! "
+//              + num + " bottles of juice! Take one down, pass it around... "
+//              + (num-1) + " bottles of juice on the wall!");
 // }
 // num = num - 1;
 // }
-
 
 //loops 6
 /*
@@ -187,3 +186,51 @@ while (num >= 0) {
 // for (let i = 0; i <= 25; i++) {
 //   for (let j = 0; j <= 99; j++) console.log(i + '-' + j);
 // }
+
+//  Functions 5 Laugh it off
+
+//  Programming Quiz: Laugh it Off 1 (5-1)
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a `laugh()` function
+ * - Your `laugh()` function should return the correct output
+ * - Your code should print `\"hahahahahahahahahaha!\"` by calling the `laugh()` function inside `console.log()`
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+
+// your code goes here
+function laugh() {
+  let l = "hahahahahahahahahaha!";
+  return l;
+}
+console.log(laugh());
+
+//  functions 6
+/*
+ * Programming Quiz: Laugh it Off 2 (5-2)
+ *
+ * Write a function called `laugh` with a parameter named `num` that represents the number of "ha"s to return.
+ *
+ * Note:
+ *  - make sure your the final character is an exclamation mark ("!")
+ *  - make sure that your function produces the correct results when it is called multiple times
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a `laugh()` function
+ * - Your `laugh()` function should have one parameter named `num`
+ * - Your `laugh()` function should return the correct number of laughs
+ */
+let chuckle = "";
+
+function laugh(num) {
+  for (let i = 0; i < num; i++) {
+    chuckle = chuckle + "ha";
+  }
+  chuckle = chuckle + "!";
+  return chuckle;
+}
+
+console.log(laugh(3));
