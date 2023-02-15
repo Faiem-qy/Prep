@@ -200,11 +200,11 @@ while (num >= 0) {
  */
 
 // your code goes here
-function laugh() {
-  let l = "hahahahahahahahahaha!";
-  return l;
-}
-console.log(laugh());
+// function laugh() {
+//   let l = "hahahahahahahahahaha!";
+//   return l;
+// }
+// console.log(laugh());
 
 //  functions 6
 /*
@@ -223,14 +223,126 @@ console.log(laugh());
  * - Your `laugh()` function should have one parameter named `num`
  * - Your `laugh()` function should return the correct number of laughs
  */
-let chuckle = "";
+// let chuckle = "";
 
-function laugh(num) {
-  for (let i = 0; i < num; i++) {
-    chuckle = chuckle + "ha";
-  }
-  chuckle = chuckle + "!";
-  return chuckle;
-}
+// function laugh(num) {
+//   for (let i = 0; i < num; i++) {
+//     chuckle = chuckle + "ha";
+//   }
+//   chuckle = chuckle + "!";
+//   return chuckle;
+// }
 
-console.log(laugh(3));
+// console.log(laugh(3));
+
+// 16
+
+// * Programming Quiz: Build A Triangle (5-3)
+// */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a `buildTriangle()` function
+ * - Your `buildTriangle()` function should take one argument (or you can say parameter)
+ * - Your `laugh()` function should build the triangle as describe above
+ */
+
+// creates a line of * for a given length
+// function makeLine(length) {
+//    var line = "";
+//    for (var j = 1; j <= length; j++) {
+//        line += "* ";
+//    }
+//    return line + "\n";
+// }
+
+// // your code goes here.  Make sure you call makeLine() in your own code.
+// function buildTriangle(length) {
+//   var triangle = "";
+//   var line = 1;
+//   for(line = 1; line <= length; line++){
+//       triangle = triangle + makeLine(line);
+//   }
+//   return triangle
+// }
+
+// 20 Functions
+/*
+ * Programming Quiz: Laugh (5-4)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `laugh`
+ * - Your code should include an anonymous function expression stored in the variable `laugh`
+ * - Your anonymous function expression should take one argument
+ * - Your anonymous function expression should return the correct number of `hahaha`\'s
+ */
+
+// var l = "";
+
+// var laugh = function (laughter){
+//     for(var h = 0;h < laughter;h++){
+//     l = l + "ha";
+// }
+// l = l + "!";
+// return l;
+// };
+// console.log(laugh(3));
+
+// 21 Functions
+
+/*
+ * Programming Quiz: Cry (5-5)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `cry`
+ * - Your code should include a named function expression stored in the variable `cry`
+ * - Your code should call the function expression using the variable name, not the function name
+ * - Your function expression should return the expected output
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+
+// your code goes here
+
+// var cry = function cry (){
+//   var tear = "boohoo!";
+//   return tear;
+// }
+
+// console.log(cry());
+
+// 22 functions
+/*
+ * Programming Quiz: Inline Functions (5-6)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an `emotions()` function
+ * - Your code should call the `emotions()` function
+ * - Your `emotions()` function call should have an inline function expression passed as the second parameter
+ * - Your function expression should return the expected output
+ */
+
+// don't change this code
+// emotions() function definition
+// function emotions(myString, myFunc) {
+//   console.log("I am " + myString + ", " + myFunc(2));
+// }
+
+// // your code goes here
+// emotions("happy",function (h){
+//   var sound = "";
+//   for(var i = 0; i < h;i++){
+//       sound = sound + "ha";
+//   }
+//   sound = sound + "!";
+//   return sound;
+// });
+
+// Call the emotions() function with two arguments
+// Argument 1 - "happy" string
+// Argument 2 - an inline function expression
