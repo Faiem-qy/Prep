@@ -346,4 +346,3 @@ while (num >= 0) {
 // Call the emotions() function with two arguments
 // Argument 1 - "happy" string
 // Argument 2 - an inline function expression
-//thisss
