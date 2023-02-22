@@ -45,10 +45,3 @@ console.log(iceCreamFlavours);
 console.log(iceCreamFlavours[0]);
 console.log(iceCreamFlavours[5]);
 console.log(iceCreamFlavours.length);
-
-let a = 3;
-let b = 4;
-b = a;
-console.log(b);
-
-const number = 2 + 2;
