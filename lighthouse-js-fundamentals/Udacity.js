@@ -346,3 +346,135 @@ while (num >= 0) {
 // Call the emotions() function with two arguments
 // Argument 1 - "happy" string
 // Argument 2 - an inline function expression
+
+// -----------ARRAYS-------------------
+
+// 6.0
+/* QUIZ REQUIREMENTS
+ * - Your code should have a variable `udaciFamily`
+ * - The variable `udaciFamily` should be an array containing the values `"Julia"`, `"James"`, and one other name
+ * - Your code should print `udaciFamily` to the console
+ * - BE CAREFUL ABOUT THE EXACT WORDS TO BE PRINTED.
+ */
+
+// your code goes here
+let udaciFamily = ["Julia", "James", "Fred"];
+console.log(udaciFamily);
+
+// 7.
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `crew`
+ * - The variable `crew` should be an array containing the Serenity\'s crew
+ * - Your code should print `crew` to the console as an array. Do not iterate over the elements.
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+
+let crew = ["Mal", "Zoe", "Wash", "Inara", "Jayne", "Kaylee"];
+console.log(crew);
+
+// 8.0
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `prices`
+ * - The variable `prices` should be an array having different values for the 1st, 3rd, and 7th elements
+ * - Your code should print `prices` to the console as an array. Do not iterate over the elements.
+ */
+
+var prices = [1.23, 48.11, 90.11, 8.5, 9.99, 1.0, 1.1, 67.0];
+
+// your code goes here
+prices[0] = 1.24;
+prices[2] = 90.12;
+prices[6] = 1.11;
+console.log(prices);
+
+var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"];
+donuts.splice(0, 0, "chocolate cruller", "creme de leche");
+
+console.log(donuts);
+
+/*
+Following is the syntax of splice() method: arrayName.splice(arg1, arg2, item1, ....., itemX); where,
+
+arg1 = Mandatory argument. Specifies the starting index position to add/remove items. You can use a negative value to specify the position from the end of the array e.g., -1 specifies the last element.
+
+arg2 = Optional argument. Specifies the count of elements to be removed. If set to 0, no items will be removed.
+
+item1, ....., itemX are the items to be added at index position arg1
+
+splice() method returns the item(s) that were removed.
+*/
+
+// 14 arrays
+
+/*
+ * Use only the splice() method to modify the rainbow variable:
+ *  - remove "Blackberry"
+ *  - add "Yellow" and "Green"
+ *  - add "Purple"
+ */
+
+var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+
+// your code goes here
+var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+
+rainbow.splice(2, 1, "Yellow", "Green");
+rainbow.splice(5, 0, "Purple");
+console.log(rainbow);
+
+// 15 Quiddich Cup
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a function `hasEnoughPlayers()`
+ * - Your function `hasEnoughPlayers()` should accept one parameter
+ * - Your function `hasEnoughPlayers()` should return the expected output - a Boolean value - true or false
+ * - Return true if the array size is atleast 7, otherwise false.
+ */
+let team = [
+  "Oliver Wood",
+  "Angelina Johnson",
+  "Katie Bell",
+  "Alicia Spinnet",
+  "George Weasley",
+  "Fred Weasley",
+  "Harry Potter",
+];
+
+function hasEnoughPlayers(team) {
+  if (team.length >= 7) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(hasEnoughPlayers(team));
+
+// 16 Joining the Crew
+
+/* * QUIZ REQUIREMENTS
+ * - Your code should have a variable `crew`
+ * - Your `crew` array should contain the Serenity\'s original crew and the three new crew members
+ * - Your code should use the `push()` method to add new members to the `crew` array
+ * - Print the array on the console at the end
+ */
+
+var captain = "Mal";
+var second = "Zoe";
+var pilot = "Wash";
+var companion = "Inara";
+var mercenary = "Jayne";
+var mechanic = "Kaylee";
+
+var crew = [captain, second, pilot, companion, mercenary, mechanic];
+
+var doctor = "Simon";
+var sister = "River";
+var shepherd = "Book";
+
+// your code goes here
+crew.push("Simon", "River", "Book");
+console.log(crew);
