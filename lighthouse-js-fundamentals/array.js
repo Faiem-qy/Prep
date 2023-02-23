@@ -29,6 +29,7 @@ console.log(director + " is the director of " + films.length + " films");
 
 */
 
+/*
 //arrays ice cream!
 
 const iceCreamFlavours = [
@@ -45,3 +46,10 @@ console.log(iceCreamFlavours);
 console.log(iceCreamFlavours[0]);
 console.log(iceCreamFlavours[5]);
 console.log(iceCreamFlavours.length);
+
+*/
+const packingList = ["tent", "bug spray", "sleeping bag"];
+
+console.log(packingList[0]);
+console.log(packingList[1]);
+console.log(packingList[2]);
