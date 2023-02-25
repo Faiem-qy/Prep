@@ -576,7 +576,7 @@ for (var row = 0; row < donutBox.length; row++) {
 }
 */
 
-// 25
+// 25 Nested numbers
 
 var numbers = [
   [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
@@ -601,3 +601,126 @@ for (var r = 0; r < numbers.length; r++) {
   }
 }
 console.log(numbers);
+
+// -------------------OBJECTS------------------
+
+// 3. Umbrella
+
+/*
+ * Programming Quiz: Umbrella (7-1)
+ */
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `umbrella`
+ * - The variable `umbrella` should be an object
+ * - Your `umbrella` object should have the `color` and `isOpen` property
+ * - Your `umbrella` object should have an `open()` method that toggles the value of `isOpen` property
+ * - Your `umbrella` object should have an `close()` method that toggles the value of `isOpen`
+ */
+
+/*
+var umbrella = {
+  color: "pink",
+  isOpen: true,
+  open: function () {
+    if (umbrella.isOpen === true) {
+      return "The umbrella is already opened!";
+    } else {
+      umbrella.isOpen = true;
+      return "Julia opens the umbrella!";
+    }
+  },
+  // your code goes here
+  close: function () {
+    if (umbrella.isOpen === false) {
+      return "The umbrella is already closed!";
+    } else {
+      umbrella.isOpen = false;
+      return "Julia closes the umbrella!";
+    }
+  },
+};
+
+*/
+
+// 8. Quiz:Menu items
+
+/*
+ * Programming Quiz: Menu Items (7-2)
+ * Create an object named `breakfast`.
+ * The object should contain properties for the `name`, `price`, and `ingredients`.
+ * Print the entire object on the console
+ */
+
+// your code goes here
+
+/*
+const breakfast = {
+  name: "The Lumberjack",
+  price: 9.95,
+  ingredients: ["eggs", "sausage", "toast", "hashbrowns", "pancakes"],
+};
+
+console.log(breakfast);
+*/
+
+// 9. Quiz Bank Accounts
+
+/*
+ * Programming Quiz: Bank Accounts 1 (7-3)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an object `savingsAccount`
+ * - Your `savingsAccount` object should have the `balance` and `interestRatePercent` property
+ * - Your `savingsAccount` object should have a `printAccountSummary()` method
+ * - Your `printAccountSummary()` method should return the EXACT expected message
+ * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
+ */
+
+/*
+var savingsAccount = {
+  balance: 1000,
+  interestRatePercent: 1,
+  deposit: function addMoney(amount) {
+    if (amount > 0) {
+      savingsAccount.balance += amount;
+    }
+  },
+  withdraw: function removeMoney(amount) {
+    var verifyBalance = savingsAccount.balance - amount;
+    if (amount > 0 && verifyBalance >= 0) {
+      savingsAccount.balance -= amount;
+    }
+  },
+  // your code goes here
+  printAccountSummary: function () {
+    return `Welcome! \nYour balance is currently $${savingsAccount.balance} and your interest rate is ${this.interestRatePercent}%.`;
+  },
+};
+
+console.log(savingsAccount.printAccountSummary());
+*/
+
+// 11. Quiz Facebook Profile
+/*
+ * Programming Quiz: Facebook Friends (7-5)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an object `facebookProfile`
+ * - The `facebookProfile` object should have the `name` (string), `friends` (number), and `messages` (array of strings) property
+ * - Your `facebookProfile` object should have the `postMessage()`, `deleteMessage()`, `addFriend()` and `removeFriend()` method
+ * - Carefully implement the desired functionality of each method, as decribed above
+ */
+
+// TIP -
+// In an array,
+// - addition at the end is done using push() method
+// - addition at a specific index is done using splice() method
+// - deletion from the beginning is done using pop() method
+// - deletion from a specific index is done using splice() method
+
+// your code goes here
