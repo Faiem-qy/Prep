@@ -576,6 +576,7 @@ for (var row = 0; row < donutBox.length; row++) {
 }
 */
 
+/*
 // 25 Nested numbers
 
 var numbers = [
@@ -601,7 +602,7 @@ for (var r = 0; r < numbers.length; r++) {
   }
 }
 console.log(numbers);
-
+*/
 // -------------------OBJECTS------------------
 
 // 3. Umbrella
@@ -723,4 +724,73 @@ console.log(savingsAccount.printAccountSummary());
 // - deletion from the beginning is done using pop() method
 // - deletion from a specific index is done using splice() method
 
+/*
 // your code goes here
+let facebookProfile = {
+  name: "Bob",
+  friends: 3,
+  messages: ["message 1", "message 2", "message 3", "message 4", "message 5"],
+  postMessage: function (message) {
+    return facebookProfile.messages.push(message);
+  },
+  deleteMessage: function (index) {
+    return facebookProfile.messages.splice(index, 1);
+  },
+  addFriend: function () {
+    return (facebookProfile.friends += 1);
+  },
+  removeFriend: function () {
+    if (facebookProfile.friends > 0) facebookProfile.friends -= 1;
+  },
+};
+
+console.log(facebookProfile);
+*/
+
+/*
+
+  postMessage: function (message) {
+    facebookProfile.messages.push(message);
+  },
+  deleteMessage: function (index) {
+    // In the following splice() method call,
+    // - argument 1 = index from where the element has to be deleted
+    // - argument 2 = count of elements to be deleted
+    facebookProfile.messages.splice(index, 1);
+  },
+  addFriend: function () {
+    facebookProfile.friends = facebookProfile.friends + 1;
+    //friends += 1; // this statement is equivalent to the above
+  },
+  removeFriend: function () {
+    if (facebookProfile.friends > 0)
+      facebookProfile.friends = facebookProfile.friends - 1;
+  },
+};
+*/
+
+/*
+ * Programming Quiz: Donuts Revisited (7-6)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have an array named `donuts`
+ * - Your `donuts` array should call the `forEach()` method
+ * - Your `forEach()` loop should output the donut summaries
+ * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
+ */
+
+// This is an array of objects.
+var donuts = [
+  { type: "Jelly", cost: 1.22 },
+  { type: "Chocolate", cost: 2.45 },
+  { type: "Cider", cost: 1.59 },
+  { type: "Boston Cream", cost: 5.99 },
+];
+
+// your code goes here
+
+donuts.forEach(function (donut) {
+  console.log(donut.type + " donuts cost $" + donut.cost + " each");
+});
