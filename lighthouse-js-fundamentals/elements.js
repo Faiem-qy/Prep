@@ -14,4 +14,12 @@ alert(paragraphs[1].innerHTML);
 
 /* console.log(paragraphs[0,1].innerHTML) */
 
-// HTMLCollection
+let elm = document.getElementsByTagName("p");
+/* console.log(elm) */
+//Above is the Object
+let arr = [];
+
+for (let i = 0; i < elm.length; i++) {
+  arr.push(elm[i].innerHTML);
+}
+console.log(arr);
