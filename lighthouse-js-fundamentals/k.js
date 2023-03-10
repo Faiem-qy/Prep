@@ -40,3 +40,22 @@ console.log(conditionalSum([1, 2, 3, 4, 5], "even"));
 console.log(conditionalSum([1, 2, 3, 4, 5], "odd"));
 console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
 console.log(conditionalSum([], "odd"));
+
+// K3
+const numberOfVowels = function (data) {
+  let vowels = ["a", "e", "i", "o", "u"];
+  let answer = 0;
+  for (let i = 0; i < vowels.length; i++) {
+    for (let j = 0; j < data.length; j++) {
+      console.log(vowels[i], data[j]);
+      if (vowels[i] == data[j]) {
+        answer += 1;
+      }
+    }
+  }
+  return answer;
+};
+
+console.log(numberOfVowels("orange"));
+console.log(numberOfVowels("lighthouse labs"));
+console.log(numberOfVowels("aeiou"));
