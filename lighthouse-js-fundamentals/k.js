@@ -109,6 +109,8 @@ const numberOfVowels = function (data) {
 //   ])
 // );
 
+// ||
+/*
 const instructorWithLongestName = function (instructors) {
   return instructors.reduce((prev, current) => {
     if (current.name.length > prev.name.length) {
@@ -135,3 +137,4 @@ console.log(
     { name: "Domascus", course: "Web" },
   ])
 ); // {name: "Domascus", course: "Web"}
+*/
