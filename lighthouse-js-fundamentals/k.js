@@ -179,3 +179,29 @@ console.log(
   ])
 ); // {name: "Domascus", course: "Web"}
 */
+
+// K5
+/*
+const urlEncode = function(text) {
+  // Put your solution here
+};
+
+console.log(urlEncode("Lighthouse Labs"));
+console.log(urlEncode(" Lighthouse Labs "));
+console.log(urlEncode("blue is greener than purple for
+
+// output
+// Lighthouse%20Labs
+// Lighthouse%20Labs
+// blue%20is%20greener%20than%20purple%20for%20sure
+
+*/
+const urlEncode = function (text) {
+  text = text.trim();
+  let replace = text.split(" ").join("%20");
+  return replace;
+};
+
+console.log(urlEncode("Lighthouse Labs"));
+console.log(urlEncode(" Lighthouse Labs "));
+console.log(urlEncode("blue is greener than purple for sure"));
