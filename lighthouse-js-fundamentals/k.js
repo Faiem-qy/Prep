@@ -1,7 +1,7 @@
 // K1
 
 /*
-unction sumLargestNumbers(arr) {
+function sumLargestNumbers(arr) {
   let lNum1 = 0;
   let lNum2 = 0;
 
@@ -20,6 +20,30 @@ unction sumLargestNumbers(arr) {
 console.log(sumLargestNumbers([1, 10]));
 console.log(sumLargestNumbers([1, 2, 3]));
 console.log(sumLargestNumbers([10, 4, 34, 6, 92, 2]));
+*/
+
+/*
+function sumLargestNumbers(arr) {
+  let highestNumber1 = 0;
+  let highestNumber2 = 0;
+  let highestNumber3 = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > highestNumber1) {
+      highestNumber3 = highestNumber2;
+      highestNumber2 = highestNumber1;
+      highestNumber1 = arr[i];
+    } else if (arr[i] > highestNumber2) {
+      highestNumber3 = highestNumber2;
+      highestNumber2 = arr[i];
+    } else if (arr[i] > highestNumber3) {
+      highestNumber3 = arr[i];
+    }
+  }
+
+  return highestNumber1 + highestNumber2 + highestNumber3;
+}
+
+console.log(sumLargestNumbers([52, 2, 5, 6]));
 */
 
 /*
@@ -42,6 +66,23 @@ console.log(conditionalSum([1, 2, 3, 4, 5], "odd"));
 console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
 console.log(conditionalSum([], "odd"));
 */
+
+/*
+const conditionalSum = function (values, condition) {
+  let total = 0;
+  for (let i = 0; i < values.length; i++)
+    if (
+      (condition === "even" && values[i] % 2 === 0) ||
+      (condition === "odd" && values[i] % 2 !== 0)
+    ) {
+      total += values[i];
+    }
+  return total;
+};
+
+console.log(conditionalSum([2, 3, 5, 4, 7], "odd"));
+*/
+
 /*
 // K3
 const numberOfVowels = function (data) {
