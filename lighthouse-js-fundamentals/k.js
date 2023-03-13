@@ -195,7 +195,7 @@ console.log(urlEncode("blue is greener than purple for
 // Lighthouse%20Labs
 // blue%20is%20greener%20than%20purple%20for%20sure
 
-*/
+
 // const urlEncode = function (text) {
 //   text = text.trim();
 //   let replace = text.split(" ").join("%20");
@@ -206,7 +206,10 @@ console.log(urlEncode("blue is greener than purple for
 // console.log(urlEncode(" Lighthouse Labs "));
 // console.log(urlEncode("blue is greener than purple for sure"));
 
-// K5
+*/
+
+/*
+// K6
 
 // const spots = [
 //   ["s", "s", "s", "s", "s", "s"],
@@ -293,4 +296,84 @@ console.log(
     ],
     "motorcycle"
   )
+);
+*/
+
+/*
+// K7
+
+const checkAir = function (samples, threshold) {
+  {
+    // console.log(samples);
+    // console.log(threshold);
+    for (let i = 0; i < samples.length; i++) {
+      if (threshold < 0.4) {
+        return "polluted";
+      } else {
+        return "clean";
+      }
+    }
+  }
+};
+
+console.log(
+  checkAir(
+    [
+      "clean",
+      "clean",
+      "dirty",
+      "clean",
+      "dirty",
+      "clean",
+      "clean",
+      "dirty",
+      "clean",
+      "dirty",
+    ],
+    0.3
+  )
+);
+
+console.log(checkAir(["dirty", "dirty", "dirty", "dirty", "clean"], 0.25));
+
+console.log(
+  checkAir(["clean", "dirty", "clean", "dirty", "clean", "dirty", "clean"], 0.9)
+);
+*/
+// K9
+//first number is the value to be repeated
+// the second value is the number of times the first number should be repeated
+
+const repeatNumbers = function (data) {
+  let result = "";
+
+  for (let i = 0; i < data.length; i++) {
+    let num = data[i][0];
+    let repeat = data[i][1];
+
+    for (let j = 0; j < repeat; j++) {
+      result += num;
+    }
+    if (i < data.length - 1) {
+      result += ", ";
+    }
+  }
+  return result;
+};
+
+console.log(repeatNumbers([[1, 10]]));
+
+console.log(
+  repeatNumbers([
+    [1, 2],
+    [2, 3],
+  ])
+);
+
+console.log(
+  repeatNumbers([
+    [10, 4],
+    [34, 6],
+    [92, 2],
+  ])
 );
