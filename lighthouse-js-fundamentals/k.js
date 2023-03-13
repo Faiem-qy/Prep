@@ -196,12 +196,101 @@ console.log(urlEncode("blue is greener than purple for
 // blue%20is%20greener%20than%20purple%20for%20sure
 
 */
-const urlEncode = function (text) {
-  text = text.trim();
-  let replace = text.split(" ").join("%20");
-  return replace;
+// const urlEncode = function (text) {
+//   text = text.trim();
+//   let replace = text.split(" ").join("%20");
+//   return replace;
+// };
+
+// console.log(urlEncode("Lighthouse Labs"));
+// console.log(urlEncode(" Lighthouse Labs "));
+// console.log(urlEncode("blue is greener than purple for sure"));
+
+// K5
+
+// const spots = [
+//   ["s", "s", "s", "s", "s", "s"],
+//   ["s", "m", "s", "S", "r", "s"],
+//   ["s", "m", "s", "S", "r", "s"],
+//   ["S", "r", "s", "m", "r", "s"],
+//   ["S", "r", "s", "m", "R", "s"],
+//   ["S", "r", "S", "M", "m", "S"],
+// ];
+
+// const vehicle = "regular"; // small, motorcycle
+
+//[x,y]
+
+//regular can park in 'regular spots'
+// small cars  can park in 'regular or small spots'
+//motorcycles can park r,s,m
+const whereCanIPark = (spots, vehicle) => {
+  for (let y = 0; y < spots.length; y++) {
+    // console.log(spots[y]);
+    for (let x = 0; x < spots[y].length; x++) {
+      // console.log("SPOT: ", spots[y]);
+      const spot = spots[y][x];
+
+      if (vehicle === "regular") {
+        if (spot === "R") {
+          return [x, y];
+        }
+      } else if (vehicle === "small") {
+        if (spot === "R" || spot === "S") {
+          return [x, y];
+        }
+      } else if (vehicle === "motorcycle") {
+        if (spot === "R" || spot === "S" || spot === "M") {
+          return [x, y];
+        }
+      }
+    }
+  }
+  return false;
 };
 
-console.log(urlEncode("Lighthouse Labs"));
-console.log(urlEncode(" Lighthouse Labs "));
-console.log(urlEncode("blue is greener than purple for sure"));
+// const result = whereCanIPark(spots, vehicle);
+// console.log(result);
+
+console.log(
+  whereCanIPark(
+    [
+      // COLUMNS ARE X
+      // 0    1    2    3    4    5
+      ["s", "s", "s", "S", "R", "M"], // 0 ROWS ARE Y
+      ["s", "M", "s", "S", "r", "M"], // 1
+      ["s", "M", "s", "S", "r", "m"], // 2
+      ["S", "r", "s", "m", "r", "M"], // 3
+      ["S", "r", "s", "m", "r", "M"], // 4
+      ["S", "r", "S", "M", "M", "S"], // 5
+    ],
+
+    "regular"
+  )
+);
+
+console.log(
+  whereCanIPark(
+    [
+      ["M", "M", "M", "M"],
+      ["M", "s", "M", "M"],
+      ["M", "M", "M", "M"],
+      ["M", "M", "r", "M"],
+    ],
+    "small"
+  )
+);
+
+console.log(
+  whereCanIPark(
+    [
+      ["s", "s", "s", "s", "s", "s"],
+      ["s", "m", "s", "S", "r", "s"],
+      ["s", "m", "s", "S", "r", "s"],
+      ["S", "r", "s", "m", "r", "s"],
+      ["S", "r", "s", "m", "R", "s"],
+      ["S", "r", "S", "M", "m", "S"],
+    ],
+    "motorcycle"
+  )
+);
