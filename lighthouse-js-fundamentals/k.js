@@ -340,6 +340,7 @@ console.log(
   checkAir(["clean", "dirty", "clean", "dirty", "clean", "dirty", "clean"], 0.9)
 );
 */
+/*
 // K9
 //first number is the value to be repeated
 // the second value is the number of times the first number should be repeated
@@ -377,3 +378,4 @@ console.log(
     [92, 2],
   ])
 );
+*/
