@@ -379,3 +379,38 @@ console.log(
   ])
 );
 */
+
+// k9 Case Maker
+// change first letter in every work to uppercase
+// remove spaces from strings
+
+const camelCase = function (input) {
+  let string = input.split(" "); // split string into array of words
+  //using more spaces changes the array from letters(''))[a,b,c], (' ')['abc']('   ')["abc def ghi jkl"]
+  // return string;
+  let uppercase = string.map((word, index) => {
+    if (index === 0) {
+      return word;
+    }
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+  return uppercase.join("");
+};
+
+console.log(camelCase("this is a string"));
+console.log(camelCase("loopy lighthouse"));
+console.log(camelCase("supercalifragalisticexpialidocious"));
+
+// output
+// thisIsAString
+// loopyLighthouse
+// supercalifragalisticexpialidocious
+
+//k10 Multiplication Table
+const multiplicationTable = function (maxValue) {
+  // Your code here
+};
+
+console.log(multiplicationTable(1));
+console.log(multiplicationTable(5));
+console.log(multiplicationTable(10));
