@@ -488,10 +488,16 @@ console.log(272000 < totalVolume(duck) && totalVolume(duck) < 275000);
 // K12
 
 // Make a helper function called ingredientCheck() that will take in one bakery at a time along with the recipes.ingredients array to check if the given bakery possesses any of the ingredients from that recipe.
-function ingredientCheck() {}
 
 const chooseRecipe = function (bakeryA, bakeryB, recipes) {
-  // Code here!
+  function ingredientCheck(bakery, ingredients) {
+    for (let i = 0; i < bakery.length; i++) {
+      if (ingredients.includes(bakery[i])) {
+        return true;
+      }
+    }
+    return false;
+  }
 };
 
 let bakeryA = ["saffron", "eggs", "tomato paste", "coconut", "custard"];
