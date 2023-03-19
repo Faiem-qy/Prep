@@ -379,7 +379,7 @@ console.log(
   ])
 );
 */
-
+/*
 // k9 Case Maker
 // change first letter in every work to uppercase
 // remove spaces from strings
@@ -421,7 +421,8 @@ const multiplicationTable = function (maxValue) {
 console.log(multiplicationTable(1));
 console.log(multiplicationTable(5));
 console.log(multiplicationTable(10));
-
+*/
+/*
 // K11
 const PI = 3.14159;
 
@@ -483,3 +484,50 @@ const cone = {
 const duck = [largeSphere, smallSphere, cone];
 
 console.log(272000 < totalVolume(duck) && totalVolume(duck) < 275000);
+*/
+// K12
+
+// Make a helper function called ingredientCheck() that will take in one bakery at a time along with the recipes.ingredients array to check if the given bakery possesses any of the ingredients from that recipe.
+function ingredientCheck() {}
+
+const chooseRecipe = function (bakeryA, bakeryB, recipes) {
+  // Code here!
+};
+
+let bakeryA = ["saffron", "eggs", "tomato paste", "coconut", "custard"];
+let bakeryB = ["milk", "butter", "cream cheese"];
+let recipes = [
+  {
+    name: "Coconut Sponge Cake",
+    ingredients: ["coconut", "cake base"],
+  },
+  {
+    name: "Persian Cheesecake",
+    ingredients: ["saffron", "cream cheese"],
+  },
+  {
+    name: "Custard Surprise",
+    ingredients: ["custard", "ground beef"],
+  },
+];
+
+console.log(chooseRecipe(bakeryA, bakeryB, recipes));
+
+bakeryA = ["potatoes", "bay leaf", "raisins"];
+bakeryB = ["red bean", "dijon mustard", "apples"];
+recipes = [
+  {
+    name: "Potato Ganache",
+    ingredients: ["potatoes", "chocolate"],
+  },
+  {
+    name: "Sweet Fish",
+    ingredients: ["anchovies", "honey"],
+  },
+  {
+    name: "Nima's Famous Dijon Raisins",
+    ingredients: ["dijon mustard", "raisins"],
+  },
+];
+
+console.log(chooseRecipe(bakeryA, bakeryB, recipes));
